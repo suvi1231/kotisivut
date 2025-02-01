@@ -24,6 +24,7 @@ header {
     transition: transform 0.3s ease;
     position: relative;
     display: inline-block;
+    text-align: center;
   }
   
   .header-left h1::after {
@@ -43,6 +44,7 @@ header {
   
   .header-right {
     display: flex;
+    justify-content: center;
     align-items: center;
   }
   
@@ -126,7 +128,7 @@ header {
   
     .header-left {
       width: 100%;
-      text-align: left;
+      text-align: center;
     }
   
     .header-left h1 {
