@@ -1,5 +1,6 @@
 .about {
   padding: 4rem 2rem;
+  padding-bottom: 0;
 }
 
 .about-content {
@@ -67,7 +68,7 @@
 }
 
 .cta-image img {
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);

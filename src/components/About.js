@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import heroImage from '../images/hero-image.png';
 import './About.css';
+import Footer from './Footer';
 
 const About = () => {
   return (
@@ -28,6 +29,7 @@ const About = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

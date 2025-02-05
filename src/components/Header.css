@@ -68,10 +68,10 @@ header {
     position: relative;
   }
   
-  nav a::after {
+  nav a:not(.button-nav)::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -5%;
     left: 50%;
     width: 0;
     height: 2px;
@@ -93,7 +93,7 @@ header {
     color: white;
     border: none;
     padding: 0.8rem 1.5rem;
-    border-radius: 8px;
+    border-radius: 25px;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;

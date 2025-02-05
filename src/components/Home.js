@@ -14,6 +14,20 @@ const Home = () => {
         <img src={heroImage} alt="Hero" />
         <h1>Hermoratahieronta on ihmisen kokonaisvaltaista hoitoa</h1>
       </section>
+      <section className="about-content">
+        <div className="about-text">
+          <h2>About Us</h2>
+          <p>
+            At Naturally Healing by Suvi, we are dedicated to providing holistic healing services to help you achieve optimal health and well-being. Our experienced practitioners offer a range of natural therapies tailored to your individual needs.
+          </p>
+          <p>
+            We believe in the power of nature and the body's innate ability to heal itself. Through our personalized approach, we aim to address the root cause of your health concerns and guide you on a path towards balance and vitality.
+          </p>
+        </div>
+        <div className="about-image">
+          <img src={heroImage} alt="About Us" />
+        </div>
+      </section>
       <section className="services">
         <div className="service">
           <img src={massage1} alt="Service 1" />
