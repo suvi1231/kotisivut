@@ -4,7 +4,6 @@
     justify-content: center;
     align-items: center;
     padding: 2rem 0;
-    background: linear-gradient(45deg, rgba(255,255,255,0.9), rgba(248,249,250,0.9));
   }
   
   .hero img {
@@ -25,8 +24,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    padding: 4rem 2rem;
-    background: linear-gradient(135deg, #fff, #f8f9fa);
+    padding: 4rem 8rem;
   }
   
   .service {

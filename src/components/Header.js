@@ -14,7 +14,7 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <Link to="/about">About</Link> {/* Fixed the incorrect Link usage */}
+              <Link className='linkki' to="/about">Lisää minusta</Link> {/* Fixed the incorrect Link usage */}
             </li>
             <li>
               <a className='button-nav' href="https://booksalon.fi/salon/healing-naturally-by-suvi?booking-state=N4IgpgtgDgNg9gTzGAkgExALhANgOwCMAxnmgMwBMAhkVQKw4AsADMxY3WAEaNFkgBfIA" target="_blank" rel="noopener noreferrer">

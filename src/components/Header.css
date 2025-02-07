@@ -1,6 +1,7 @@
 header {
-    background: rgba(255, 255, 255, 0.95);
-    padding: 1.5rem 2rem;
+    /* background: rgba(255, 255, 255, 0.95); */
+    background: #feebb4 !important;
+    padding: 1.5rem 8rem;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
     position: sticky;
     top: 0;
@@ -116,6 +117,19 @@ header {
     padding: 1rem 2rem;
     background: rgba(255, 255, 255, 0.98);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .linkki {
+    color: #2d3436;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    position: relative;
+    background-color: #f0ead6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   /* Mobile styles */

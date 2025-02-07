@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
-  background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* max-width: 900px; */
-  width: 80%;
-  margin: 0 auto;
+  width: 75%;
+  /* margin: 0 auto; */
+  margin-left: 15%;
 }
 
 .contact-info {
@@ -46,7 +46,7 @@
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 20px;
-  background-color: #edfdff;
+  background-color: #f7feff;
 }
 
 .contact button {
@@ -63,6 +63,12 @@
 
 .contact button:hover {
   background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin: 0 auto !important;
+  }
 }
 
 @media (min-width: 768px) {
