@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-left">
-        <p>Naturally Healing by Suvi</p>
+        <p>Healing Naturally by Suvi</p>
         <div className="social-icons">
           <a href="#" target="_blank" rel="noopener noreferrer">
             <FaInstagram />

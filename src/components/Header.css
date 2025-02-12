@@ -1,6 +1,6 @@
 header {
     /* background: rgba(255, 255, 255, 0.95); */
-    background: #feebb4 !important;
+    background: #E6E6FA !important;
     padding: 1.5rem 8rem;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
     position: sticky;
@@ -45,8 +45,22 @@ header {
   
   .header-right {
     display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .header-center {
+    display: flex;
     justify-content: center;
     align-items: center;
+  }
+  
+  .header-center img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-self: center;
   }
   
   nav ul {
@@ -128,7 +142,7 @@ header {
     border-radius: 6px;
     transition: all 0.3s ease;
     position: relative;
-    background-color: #f0ead6;
+    background-color: hsl(212, 77%, 90%);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
@@ -143,6 +157,7 @@ header {
     .header-left {
       width: 100%;
       text-align: center;
+      display: none;
     }
   
     .header-left h1 {

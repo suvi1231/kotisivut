@@ -1,5 +1,5 @@
 .about {
-  padding: 4rem 2rem;
+  padding: 4rem 0;
   padding-bottom: 0;
 }
 
@@ -59,6 +59,30 @@
   transform: scale(1.02);
 }
 
+.additional-info {
+  text-align: center;
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 5%;
+}
+
+.additional-info p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #666;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.additional-info:hover {
+  transform: translateY(-10px);
+}
+
 .about-cta {
   text-align: center;
 }
@@ -106,10 +130,22 @@
 
   .about-text {
     padding-right: 0;
+    padding: 0 !important;
     margin-bottom: 2rem;
+  }
+  .about-text h2 {
+    padding-inline: 10%;
+    font-size: 1.5rem;
   }
 
   .about-image img {
     width: 100%;
+  }
+  .about-text p {
+    font-size: 0.9rem;
+    margin: 10%;
+  }
+  .about-cta {
+    display: none;
   }
 }

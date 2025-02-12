@@ -7,12 +7,15 @@
   }
   
   .hero img {
-    width: 80%;
+    width: 70%;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
     animation: fadeIn 1s ease-out;
+    /* margin: 5%; */
+    margin-bottom: 5%;
+    margin-inline: 5%;
   }
   
   .hero img:hover {
@@ -196,7 +199,7 @@
     }
 
     .hero h1 {
-      font-size: 1.5rem !important;
+      font-size: 1.4rem !important;
     }
 
     .service img {
@@ -224,7 +227,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     animation: fadeInCenter 1s ease-out;
