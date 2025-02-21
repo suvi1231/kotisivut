@@ -5,45 +5,62 @@ import massage2 from '../images/massage2.jpg';
 import Footer from './Footer';
 import './Home.css';
 import ContactUs from './ContactUs';
+import suvi from '../images/suviturunen.jpg';
+import kotivideo from '../images/kotivideo.mp4';
 
 const Home = () => {
   return (
     <>
       <section className="hero">
         <img src={heroImage} alt="Hero" />
-        <h1>Hermoratahieronta on ihmisen kokonaisvaltaista hoitoa</h1>
+        <h1>Hermoratahierontaa
+        — terveytesi tueksi</h1>
       </section>
       <section className="about-content">
         <div className="about-text">
           <h2>Lisää minusta</h2>
           <p>
-            At Healing Naturally by Suvi, we are dedicated to providing holistic healing services to help you achieve optimal health and well-being. Our experienced practitioners offer a range of natural therapies tailored to your individual needs.
+            Minua on lapsesta asti kiehtonut kokonaisvaltainen hyvinvointi ja ravinnon sekä liikunnan merkitys osana sitä. Olen kiertänyt eri puolilla maailmaa saaden oppia lukuisilta huippuosaajilta ja kasvattanut omaa tietämystäni siitä, miten kokonaisvaltaista hyvinvointia voi edistää luontaisilla menetelmillä.
           </p>
           <p>
-            We believe in the power of nature and the body's innate ability to heal itself. Through our personalized approach, we aim to address the root cause of your health concerns and guide you on a path towards balance and vitality.
+            Ensimmäiset oppini kokonaisvaltaiseen hyvinvointiin liittyen sain jo vuonna 2014, kun valmistuin SKY opistosta, jossa suoritin opintojen lisäksi kansainvälisesti arvostetun Cidesco tutkinnon. Tämän jälkeen olen suorittanut lukuisia opintoja eripuolilla maailmaa ja viimeisin opintoreissuni oli 2024 Balilla, josta sain valtavasti oppia itämaisiin menetelmiin.
+          </p>
+          <p>
+            Yhdistelemällä saamiani oppeja osana hermoratahierontaa voin tarjota apua moniin sairauksiin ja ennalta ehkäistä niiden syntyä ja kehittymistä.
           </p>
         </div>
         <div className="about-image">
-          <img src={heroImage} alt="About Us" />
+          <img src={suvi} alt="About Us" />
         </div>
       </section>
+      <h1 className='services-header'>Hoidot ja hinnasto</h1>
       <section className="services">
         <div className="service">
-          <img src={massage1} alt="Hermoratahieronta" />
           <div className="service-description">
-            <h2>Hermoratahieronta 1,5-2h (sis. alkukartoituksen)</h2>
-            <p className="price">130€ (sis. alv 25.5%)</p>
-            <p>Hermoratahieronta on ihmisen kokonaisvaltaista hoitoa, joka rentouttaa ja tasapainottaa kehoa ja mieltä.</p>
+            <h2>Kertakäynti</h2>
+            <p className="price">135€</p>
+            <p>Mahdollisuus tutustua hoitomuotoon ja menetelmiin ilman suurempaa sitoutumista.</p>
           </div>
         </div>
         <div className="service">
-          <img src={massage2} alt="Hermoratahieronta" />
           <div className="service-description">
-            <h2>Hermoratahieronta aloituspaketti 3-5krt (1,5-2h krt) voimassa 6kk</h2>
-            <p className="price">115€ (sis. alv 25.5%)</p>
-            <p>Hermoratahieronta on ihmisen kokonaisvaltaista hoitoa, joka rentouttaa ja tasapainottaa kehoa ja mieltä.</p>
+            <h2>Sarjahoito (5 kertaa)</h2>
+            <p className="price">650€</p>
+            <p>Suositellaan pitkään jatkuneisiin kiputiloihin ja sairauksiin viiden (5) käyntikerran pakettina.</p>
           </div>
         </div>
+        <div className="service">
+          <div className="service-description">
+            <h2>Sarjahoito (10 kertaa)</h2>
+            <p className="price">1250€</p>
+            <p>Suositellaan pitkään jatkuneisiin kiputiloihin ja sairauksiin 10 käyntikerran pakettina.</p>
+          </div>
+        </div>
+      </section>
+      <section className="service-info">
+        <p>
+          Hoidot kestävät noin kaksi (2) tuntia. Ensimmäisen hoidon yhteydessä kartoitetaan sinun vaivasi ja suunnitellaan yhdessä niihin sopiva ratkaisu. Jokainen vaiva ja oire on yksilöllinen ja on tärkeää rakentaa juuri sinun kehosi kannalta oikea hoitopaketti sekä hoitosuunnitelma lyhyellä ja pitkällä aikavälillä. Oikein mitoitetulla hoitosuunnitelmalla ja tiiviillä hoitosyklillä saadaan merkittävää hyötyä kehon toiminnan kannalta. Kysyy lisää hoidoista, vastaan mielelläni!
+        </p>
       </section>
       <ContactUs />
       <Footer />

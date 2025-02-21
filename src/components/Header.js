@@ -17,9 +17,9 @@ const Header = () => {
       <div className="header-right">
         <nav>
           <ul>
-            <li>
-              <Link className='linkki' to="/about">Lisätietoja</Link> {/* Fixed the incorrect Link usage */}
-            </li>
+            {/* <li>
+              <Link className='linkki' to="/about">Lisätietoja</Link>
+            </li> */}
             <li>
               <a className='button-nav' href="https://booksalon.fi/salon/healing-naturally-by-suvi?booking-state=N4IgpgtgDgNg9gTzGAkgExALhANgOwCMAxnmgMwBMAhkVQKw4AsADMxY3WAEaNFkgBfIA" target="_blank" rel="noopener noreferrer">
                 <button>Varaa aika</button>

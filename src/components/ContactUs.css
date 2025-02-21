@@ -18,7 +18,8 @@
 
 .contact-info h2 {
   margin-bottom: 10px;
-  font-size: x-large;
+  color: #226663;
+  font-size: 2.2rem;
   text-align: left;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -58,7 +59,7 @@
   padding: 10px 20px;
   border: none;
   border-radius: 15px;
-  background-color: #007bff;
+  background-color: #6E5084;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
