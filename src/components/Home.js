@@ -13,12 +13,10 @@ import About from './About';
 const Home = () => {
   return (
     <>
-      <section className="hero">
         {/* <img src={heroImage} alt="Hero" />
         <h1>Hermoratahierontaa
         — terveytesi tueksi</h1> */}
         <TextAndImage />
-      </section>
       <section className="about-content">
         {/* <div className="about-text">
           <h2>Lisää minusta</h2>

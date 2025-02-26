@@ -1,26 +1,35 @@
 .text-and-image {
     display: flex;
-    height: 60vh;
+    height: 80vh;
     padding-block: 10%;
+    justify-content: space-between;
+    align-items: center;
   }
   
   .text-content {
     width: 50%;
-    padding: 2rem;
-    box-sizing: border-box; /* Ensures padding doesn't overflow */
+    padding: 6rem;
+    box-sizing: border-box;
   }
   
-  .text-content h1, .text-content h2, .text-content h4 {
-    margin: 0.5rem 0;
+  .text-content h1, .text-content h2 {
+    color: #226663;
+    margin: 1rem 0;
+  }
+  
+  .text-content h4 {
+    color: #6E5084;
+    margin: 0.8rem 0;
   }
   
   .text-content p {
+    color: #6E5084;
     margin: 1rem 0;
   }
   
   .image-content {
     width: 40%;
-    height: 100%; /* Ensures the image container takes full height of the section */
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,8 +37,32 @@
   
   .image-content img {
     width: 100%;
-    height: auto; /* Ensures the image maintains its aspect ratio */
-    object-fit: contain; /* Ensures the image fits inside the container without stretching */
-    padding: 40%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding-right: 12%;
+  }
+  
+  @media (max-width: 768px) {
+    .text-and-image {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .text-content {
+      width: 100%;
+      padding: 1rem;
+    }
+  
+    .image-content {
+      width: 100%;
+      height: auto;
+      margin-top: 1rem;
+    }
+  
+    .image-content img {
+      height: auto;
+      width: 100%;
+    }
   }
   
