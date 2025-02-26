@@ -1,0 +1,35 @@
+.text-and-image {
+    display: flex;
+    height: 60vh;
+    padding-block: 10%;
+  }
+  
+  .text-content {
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box; /* Ensures padding doesn't overflow */
+  }
+  
+  .text-content h1, .text-content h2, .text-content h4 {
+    margin: 0.5rem 0;
+  }
+  
+  .text-content p {
+    margin: 1rem 0;
+  }
+  
+  .image-content {
+    width: 40%;
+    height: 100%; /* Ensures the image container takes full height of the section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-content img {
+    width: 100%;
+    height: auto; /* Ensures the image maintains its aspect ratio */
+    object-fit: contain; /* Ensures the image fits inside the container without stretching */
+    padding: 40%;
+  }
+  

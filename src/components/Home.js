@@ -7,17 +7,20 @@ import './Home.css';
 import ContactUs from './ContactUs';
 import suvi from '../images/suviturunen.jpg';
 import kotivideo from '../images/kotivideo.mp4';
+import TextAndImage from './TextAndImage';
+import About from './About';
 
 const Home = () => {
   return (
     <>
       <section className="hero">
-        <img src={heroImage} alt="Hero" />
+        {/* <img src={heroImage} alt="Hero" />
         <h1>Hermoratahierontaa
-        — terveytesi tueksi</h1>
+        — terveytesi tueksi</h1> */}
+        <TextAndImage />
       </section>
       <section className="about-content">
-        <div className="about-text">
+        {/* <div className="about-text">
           <h2>Lisää minusta</h2>
           <p>
             Minua on lapsesta asti kiehtonut kokonaisvaltainen hyvinvointi ja ravinnon sekä liikunnan merkitys osana sitä. Olen kiertänyt eri puolilla maailmaa saaden oppia lukuisilta huippuosaajilta ja kasvattanut omaa tietämystäni siitä, miten kokonaisvaltaista hyvinvointia voi edistää luontaisilla menetelmillä.
@@ -31,7 +34,7 @@ const Home = () => {
         </div>
         <div className="about-image">
           <img src={suvi} alt="About Us" />
-        </div>
+        </div> */}
       </section>
       <h1 className='services-header'>Hoidot ja hinnasto</h1>
       <section className="services">
