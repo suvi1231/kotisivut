@@ -7,6 +7,7 @@ import {FaInstagram , FaFacebook } from "react-icons/fa";
 const Header = () => {
   return (
     <header>
+    <div className='header-upper'>
       <div className="header-left">
           <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
             {/* <i className="fa fa-instagram" aria-hidden="true"></i> */}
@@ -24,15 +25,13 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <Link className='linkki' to="/about">Lisää minusta</Link> 
-            </li>
-            <li>
               <a className='button-nav' href="https://booksalon.fi/salon/healing-naturally-by-suvi?booking-state=N4IgpgtgDgNg9gTzGAkgExALhANgOwCMAxnmgMwBMAhkVQKw4AsADMxY3WAEaNFkgBfIA" target="_blank" rel="noopener noreferrer">
                 <button>Ajanvaraus</button>
               </a>
             </li>
           </ul>
         </nav>
+      </div>
       </div>
       <div className="header-links">
         <Link className="header-link" to="/">Etusivu</Link>

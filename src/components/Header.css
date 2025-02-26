@@ -1,218 +1,246 @@
 header {
-    /* background: rgba(255, 255, 255, 0.95); */
-    background: #E6E6FA !important;
-    padding: 1.5rem 8rem;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: padding 0.3s ease;
-  }
-
-header div {
-  width: 33%;
+  background: #E6E6FA !important;
+  padding: 1.5rem 8rem;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: padding 0.3s ease;
 }
-  
-  .header-left {
-    flex: 1;
-    align-items: center;
-    display: flex;
-    justify-content: left;
+
+.header-upper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-left,
+.header-center,
+.header-right {
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-left {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+}
+
+.header-left a {
+  font-size: 1.8rem;
+  margin-inline: 3%;
+  transition: transform 0.3s ease;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.header-left h1::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #4a90e2, #a8c7ed);
+  transition: width 0.3s ease;
+}
+
+.header-left h1:hover::after {
+  width: 100%;
+}
+
+.header-right {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.header-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-center img {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+/* New header-links section */
+.header-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.header-link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.header-link:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+nav a {
+  color: #2d3436;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+nav a:not(.button-nav)::after {
+  content: '';
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #4a90e2;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+nav a:hover {
+  color: #4a90e2;
+}
+
+nav a:hover::after {
+  width: 80%;
+}
+
+nav button {
+  background: #4a90e2;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(74, 144, 226, 0.2);
+}
+
+nav button:hover {
+  background: #357abd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+}
+
+nav button:active {
+  transform: translateY(0);
+}
+
+/* Scroll behavior */
+header.scrolled {
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.linkki {
+  color: #2d3436;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+  background-color: hsl(212, 77%, 90%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
   }
 
-  .header-left a {
-    font-size: 1.8rem;
-    margin-inline: 3%;
-    transition: transform 0.3s ease;
-    position: relative;
-    display: inline-block;
+  .header-left {
+    width: 100%;
     text-align: center;
+    display: none;
   }
-  
-  .header-left h1::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, #4a90e2, #a8c7ed);
-    transition: width 0.3s ease;
+
+  .header-left h1 {
+    font-size: 1.5rem;
   }
-  
-  .header-left h1:hover::after {
+
+  .header-right {
     width: 100%;
   }
-  
-  .header-right {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-  }
 
-  .header-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .header-center img {
-    width: 100px; /* Adjust the width as needed */
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-  }
-  
   nav ul {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 1rem;
   }
-  
+
   nav a {
-    color: #2d3436;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-    position: relative;
-  }
-
-
-  
-  nav a:not(.button-nav)::after {
-    content: '';
-    position: absolute;
-    bottom: -5%;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background: #4a90e2;
-    transition: all 0.3s ease;
-    transform: translateX(-50%);
-  }
-  
-  nav a:hover {
-    color: #4a90e2;
-  }
-  
-  nav a:hover::after {
-    width: 80%;
-  }
-  
-  nav button {
-    background: #4a90e2;
-    color: white;
-    border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 25px;
     font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 10px rgba(74, 144, 226, 0.2);
+    padding: 0.4rem 0.8rem;
   }
-  
-  nav button:hover {
-    background: #357abd;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+
+  nav button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
   }
-  
-  nav button:active {
+}
+
+/* Animation for initial load */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
     transform: translateY(0);
   }
-  
-  /* Scroll behavior */
-  header.scrolled {
-    padding: 1rem 2rem;
-    background: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-  }
+}
 
-  .linkki {
-    color: #2d3436;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-    position: relative;
-    background-color: hsl(212, 77%, 90%);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Mobile styles */
-  @media (max-width: 768px) {
-    header {
-      flex-direction: column;
-      padding: 1rem;
-      gap: 1rem;
-    }
-  
-    .header-left {
-      width: 100%;
-      text-align: center;
-      display: none;
-    }
-  
-    .header-left h1 {
-      font-size: 1.5rem;
-    }
-  
-    .header-right {
-      width: 100%;
-    }
-  
-    nav ul {
-      width: 100%;
-      justify-content: flex-end;
-      gap: 1rem;
-    }
-  
-    nav a {
-      font-size: 1rem;
-      padding: 0.4rem 0.8rem;
-    }
-  
-    nav button {
-      padding: 0.6rem 1.2rem;
-      font-size: 0.9rem;
-    }
-  }
-  
-  /* Animation for initial load */
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  nav ul li {
-    opacity: 0;
-    animation: slideIn 0.5s ease-out forwards;
-  }
-  
-  nav ul li:nth-child(1) {
-    animation-delay: 0.2s;
-  }
-  
-  nav ul li:nth-child(2) {
-    animation-delay: 0.4s;
-  }
+nav ul li {
+  opacity: 0;
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+nav ul li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+nav ul li:nth-child(2) {
+  animation-delay: 0.4s;
+}
