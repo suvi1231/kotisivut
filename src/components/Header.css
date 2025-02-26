@@ -1,7 +1,7 @@
 header {
   background: #E6E6FA !important;
   padding: 1.5rem 8rem;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05); */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -41,6 +41,11 @@ header {
   position: relative;
   display: inline-block;
   text-align: center;
+  color: #6E5084;
+}
+
+.header-left a:hover {
+  color: #8c749e;
 }
 
 .header-left h1::after {
@@ -71,7 +76,7 @@ header {
 }
 
 .header-center img {
-  width: 100px; /* Adjust the width as needed */
+  width: 69%; /* Adjust the width as needed */
   height: auto;
   display: flex;
   justify-content: center;
@@ -88,14 +93,14 @@ header {
 }
 
 .header-link {
-  text-decoration: none;
+  text-decoration: underline;
   font-size: 18px;
-  color: #333;
+  color: #6E5084;
   font-weight: bold;
 }
 
 .header-link:hover {
-  color: #007bff; /* Change color on hover */
+  color: #705e7d; /* Change color on hover */
 }
 
 nav ul {
@@ -139,7 +144,7 @@ nav a:hover::after {
 }
 
 nav button {
-  background: #4a90e2;
+  background: #6E5084;
   color: white;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -152,7 +157,7 @@ nav button {
 }
 
 nav button:hover {
-  background: #357abd;
+  background: #9d7db4;
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
 }

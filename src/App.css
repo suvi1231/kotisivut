@@ -2,6 +2,6 @@
 .App {
   min-height: 100vh;
   /* background: linear-gradient(to bottom, #ffffff, #f8f9fa); */
-  background: linear-gradient(to bottom, #E6E6FA, #D8BFD8) !important;
+  background:#E6E6FA !important;
   overflow-x: hidden;
 }
