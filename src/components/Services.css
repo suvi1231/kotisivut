@@ -1,0 +1,138 @@
+.services-container {
+    background-color: #6E5084;
+    color: #fff;
+    padding: 2rem;
+}
+
+.services-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.header-content {
+    width: 60%;
+}
+
+.header-image {
+    width: 35%;
+}
+
+.header-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.services-pricing {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.services-pricing h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.service {
+    color: #333;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.service-description h3 {
+    margin-top: 0;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.services-video {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.services-video video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.services-booking {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.services-header-h1 {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.booking-left, .booking-right {
+    margin-right: 4%;
+    text-align: center;
+}
+
+.booking-right {
+    margin-left: 4%;
+}
+
+.booking-left h2, .booking-right h2 {
+    margin-bottom: 1rem;
+}
+
+.booking-left p, .booking-right p {
+    margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+    .services-header {
+        flex-direction: column;
+    }
+
+    .header-content, .header-image {
+        width: 100%;
+    }
+
+    .services-pricing {
+        flex-direction: column;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .services-booking {
+        flex-direction: column;
+    }
+
+    .booking-left, .booking-right {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+/* New styles for services in a row */
+.services-pricing .service {
+    width: 30%;
+    margin: 0 1%;
+}
+
+@media (max-width: 768px) {
+    .services-pricing .service {
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+}

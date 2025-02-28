@@ -93,7 +93,7 @@ header {
 }
 
 .header-link {
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 18px;
   color: #6E5084;
   font-weight: bold;
@@ -101,6 +101,10 @@ header {
 
 .header-link:hover {
   color: #705e7d; /* Change color on hover */
+}
+
+.header-link:active {
+  text-decoration: underline;
 }
 
 nav ul {
@@ -147,8 +151,8 @@ nav button {
   background: #6E5084;
   color: white;
   border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 25px;
+  padding: 1rem 2rem;
+  border-radius: 10px;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;

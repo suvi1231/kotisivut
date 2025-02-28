@@ -9,6 +9,7 @@ import suvi from '../images/suviturunen.jpg';
 import kotivideo from '../images/kotivideo.mp4';
 import TextAndImage from './TextAndImage';
 import About from './About';
+import Services from './Services';
 
 const Home = () => {
   return (
@@ -34,35 +35,7 @@ const Home = () => {
           <img src={suvi} alt="About Us" />
         </div> */}
       </section>
-      <h1 className='services-header'>Hoidot ja hinnasto</h1>
-      <section className="services">
-        <div className="service">
-          <div className="service-description">
-            <h2>Kertakäynti</h2>
-            <p className="price">135€</p>
-            <p>Mahdollisuus tutustua hoitomuotoon ja menetelmiin ilman suurempaa sitoutumista.</p>
-          </div>
-        </div>
-        <div className="service">
-          <div className="service-description">
-            <h2>Sarjahoito (5 kertaa)</h2>
-            <p className="price">650€</p>
-            <p>Suositellaan pitkään jatkuneisiin kiputiloihin ja sairauksiin viiden (5) käyntikerran pakettina.</p>
-          </div>
-        </div>
-        <div className="service">
-          <div className="service-description">
-            <h2>Sarjahoito (10 kertaa)</h2>
-            <p className="price">1250€</p>
-            <p>Suositellaan pitkään jatkuneisiin kiputiloihin ja sairauksiin 10 käyntikerran pakettina.</p>
-          </div>
-        </div>
-      </section>
-      <section className="service-info">
-        <p>
-          Hoidot kestävät noin kaksi (2) tuntia. Ensimmäisen hoidon yhteydessä kartoitetaan sinun vaivasi ja suunnitellaan yhdessä niihin sopiva ratkaisu. Jokainen vaiva ja oire on yksilöllinen ja on tärkeää rakentaa juuri sinun kehosi kannalta oikea hoitopaketti sekä hoitosuunnitelma lyhyellä ja pitkällä aikavälillä. Oikein mitoitetulla hoitosuunnitelmalla ja tiiviillä hoitosyklillä saadaan merkittävää hyötyä kehon toiminnan kannalta. Kysyy lisää hoidoista, vastaan mielelläni!
-        </p>
-      </section>
+      <Services />
       <ContactUs />
       <Footer />
     </>

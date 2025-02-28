@@ -1,6 +1,6 @@
 
   /* Services section */
-  .services {
+  /* .services {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -80,7 +80,7 @@
   .service-description p {
     color: #666;
     line-height: 1.6;
-  }
+  } */
   
   /* Contact section */
   .contact {

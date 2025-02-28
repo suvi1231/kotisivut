@@ -8,8 +8,10 @@
   
   .text-content {
     width: 50%;
-    padding: 6rem;
+    padding: 0 0 6rem 6rem;
     box-sizing: border-box;
+    gap: 0.2rem;
+    display: grid;
   }
   
   .text-content h1, .text-content h2 {
@@ -28,7 +30,7 @@
   }
   
   .image-content {
-    width: 40%;
+    width: 45%;
     height: 100%;
     display: flex;
     justify-content: center;

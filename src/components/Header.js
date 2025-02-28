@@ -1,10 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Header.css';
 import logo from '../images/HealingNaturally.png';
 import {FaInstagram , FaFacebook } from "react-icons/fa";
 
 const Header = () => {
+  const location = useLocation();
+  console.log(location.pathname)
+
   return (
     <header>
     <div className='header-upper'>
@@ -34,8 +37,8 @@ const Header = () => {
       </div>
       </div>
       <div className="header-links">
-        <Link className="header-link" to="/">Etusivu</Link>
-        <Link className="header-link" to="/about">Yrittäjästä</Link>
+        <Link className={`header-link ${!location.pathname.includes('minusta') ? 'active' : ''}`} to="/">Etusivu</Link>
+        <Link className={`header-link ${location.pathname.includes('minusta') ? 'active' : ''}`} to="/minusta">Yrittäjästä</Link>
       </div>
     </header>
   );
