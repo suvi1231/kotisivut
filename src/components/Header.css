@@ -205,10 +205,8 @@ header.scrolled {
   top: 100%;
   left: 0;
   width: 100%;
-  padding: 1rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 186px);
   z-index: 1000;
-  height: 80vh;
 }
 
 .mobile-menu.open {
@@ -219,6 +217,14 @@ header.scrolled {
   display: flex;
   gap: 1rem;
   margin: 1rem 0;
+  position: absolute;
+  bottom: 8rem; /* Position above the button */
+}
+
+.mobile-menu .button-nav {
+  position: absolute;
+  bottom: 4rem;
+  color: #226663;
 }
 
 @media (max-width: 768px) {
@@ -240,20 +246,21 @@ header.scrolled {
     display: none;
   }
 
-    .burger-icon {
-      display: block;
-      position: absolute;
-      right: 3rem;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+  .burger-icon {
+    display: block;
+    position: absolute;
+    right: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
   .header-links {
     display: none;
   }
 
   .header-link {
-    font-size: 14px; /* Reduce the font size */
+    font-size: 18px; /* Increase the font size */
+    margin: 1rem 0;
   }
 
   nav ul {
