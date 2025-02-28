@@ -103,15 +103,6 @@
     transform: translateY(0);
   }
   
-  /* Footer */
-  footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    margin-top: 4rem;
-  }
-  
   /* Animations */
   @keyframes fadeIn {
     from {

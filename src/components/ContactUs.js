@@ -6,7 +6,7 @@ const ContactUs = () => {
     <section className="contact">
       <div className="contact-info">
         <h2>Ota yhteyttä</h2>
-        <p>Hei, otathan yhteyttä jos sinulla on kysymyksiä tai jokin jäi mietityttämään</p>
+        <p>Kiinnostaako sinua kuulla lisää menetelmistä ja hoidoista?<br></br> <br></br> Ota rohkeasti yhteyttä niin palaan asiaan pian. </p>
       </div>
       <div className="contact-form">
         <form>
