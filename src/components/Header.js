@@ -7,6 +7,7 @@ import { FaInstagram, FaFacebook, FaBars, FaTimes } from "react-icons/fa";
 const Header = () => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
+  console.log(location.pathname.includes('minusta'))
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);

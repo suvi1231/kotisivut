@@ -81,63 +81,17 @@
     color: #666;
     line-height: 1.6;
   } */
-  
-  /* Contact section */
-  .contact {
-    padding: 4rem 2rem;
-    background: linear-gradient(135deg, #f8f9fa, #fff);
 
-    margin: 0 auto;
-  }
-  
-  .contact h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  label {
-    color: #555;
-    font-weight: 500;
-  }
-  
-  input, textarea {
-    padding: 0.8rem;
-    border: 2px solid #eee;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  input:focus, textarea:focus {
-    outline: none;
-    border-color: #4a90e2;
-    box-shadow: 0 0 0 3px rgba(74,144,226,0.1);
-  }
-  
-  textarea {
-    min-height: 150px;
-    resize: vertical;
-  }
   
   button {
     padding: 1rem 2rem;
-    /* background: #4a90e2; */
+    background: #6E5084;
     color: white;
     border: none;
     border-radius: 8px;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
   }
   
   button:hover {
@@ -179,22 +133,10 @@
   
   /* Responsive Design */
   @media (max-width: 768px) {
-  
-    .services {
-      grid-template-columns: 1fr;
-      padding: 3rem 2rem;
-    }
-  
-    .contact {
-      padding: 2rem 1rem;
-    }
+
 
     .service img {
       height: 200px;
-    }
-
-    .service-description{
-      padding: 0 1.5rem 1.5rem;
     }
   }
   
