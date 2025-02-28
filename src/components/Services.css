@@ -2,6 +2,7 @@
     background-color: #6E5084;
     color: #fff;
     padding: 2rem;
+    padding-inline: 14%;
 }
 
 .services-header {
@@ -9,10 +10,20 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2rem;
+    padding-top: 5rem;
 }
 
 .header-content {
     width: 60%;
+}
+
+.header-content p {
+    font-size: 0.8rem;
+    padding-right: 8rem;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
 }
 
 .header-image {
@@ -26,23 +37,34 @@
 
 .services-pricing {
     margin-bottom: 2rem;
+    width: 100%;
+    text-align: start;
+}
+
+.services-pricing h2{
+    text-align: start;
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: 2.5rem;
+}
+
+.services-pricing-h3 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.services-oneline {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
-.services-pricing h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-    width: 100%;
-}
-
 .service {
-    color: #333;
+    color: #ffffff;
     padding: 1rem;
     margin-bottom: 1rem;
-    width: 100%;
+    width: 30%;
     box-sizing: border-box;
     text-align: center;
 }
@@ -51,9 +73,13 @@
     margin-top: 0;
 }
 
+.service-description {
+    text-align: start;
+}
+
 .price {
-    font-weight: bold;
-    font-size: 1.2rem;
+    /* font-weight: bold; */
+    /* font-size: 1.2rem; */
 }
 
 .services-video {
@@ -63,8 +89,7 @@
 
 .services-video video {
     width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
+    /* max-width: 600px; */
 }
 
 .services-booking {
@@ -78,15 +103,13 @@
     display: block;
     width: 100%;
     margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 300;
 }
 
 .booking-left, .booking-right {
-    margin-right: 4%;
-    text-align: center;
-}
-
-.booking-right {
-    margin-left: 4%;
+    margin-inline: 6%;
+    text-align: left;
 }
 
 .booking-left h2, .booking-right h2 {
@@ -95,6 +118,15 @@
 
 .booking-left p, .booking-right p {
     margin: 0.5rem 0;
+}
+
+.booksalon-link a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.booksalon-link a:hover {
+    color: #7c6d87;
 }
 
 @media (max-width: 768px) {
@@ -110,6 +142,10 @@
         flex-direction: column;
     }
 
+    .services-oneline {
+        flex-direction: column;
+    }
+
     .service {
         width: 100%;
     }
@@ -121,18 +157,5 @@
     .booking-left, .booking-right {
         width: 100%;
         margin-bottom: 1rem;
-    }
-}
-
-/* New styles for services in a row */
-.services-pricing .service {
-    width: 30%;
-    margin: 0 1%;
-}
-
-@media (max-width: 768px) {
-    .services-pricing .service {
-        width: 100%;
-        margin: 0 0 1rem 0;
     }
 }

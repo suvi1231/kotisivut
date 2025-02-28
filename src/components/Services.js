@@ -1,6 +1,7 @@
 import React from 'react';
 import './Services.css';
-import treatmentImage from '../images/hands1.jpg'; // Add your image path here
+import treatmentImage from '../images/Suvikukka.png'; // Add your image path here
+import kotivideo from '../images/kotivideo.mp4'; 
 
 const Services = () => {
     return (
@@ -17,6 +18,7 @@ const Services = () => {
 
             <section className="services-pricing">
                 <h2>Hinnasto</h2>
+                <h3 className='services-pricing-h3'>Hermoratahieronta (hinnat sis. alv 25,5%)</h3>
                 <div className="services-oneline">
                 <div className="service">
                     <div className="service-description">
@@ -27,15 +29,15 @@ const Services = () => {
                 </div>
                 <div className="service">
                     <div className="service-description">
-                        <h3>Sarjahoito (5 kertaa)</h3>
-                        <p className="price">650€</p>
+                        <h3>Sarjahoito</h3>
+                        <p className="price"> 595€ (1krt 119€)</p>
                         <p>Suositellaan pitkään jatkuneisiin kiputiloihin ja sairauksiin viiden (5) käyntikerran pakettina.</p>
                     </div>
                 </div>
                 <div className="service">
                     <div className="service-description">
-                        <h3>Sarjahoito (10 kertaa)</h3>
-                        <p className="price">1250€</p>
+                        <h3>Sarjahoito</h3>
+                        <p className="price">1090€ (1krt 109€) </p>
                         <p>Suositellaan pitkään jatkuneisiin kiputiloihin ja sairauksiin 10 käyntikerran pakettina.</p>
                     </div>
                 </div>
@@ -43,9 +45,8 @@ const Services = () => {
             </section>
 
             <section className="services-video">
-                <h2>Video</h2>
-                <video controls>
-                    <source src="path/to/your/video.mp4" type="video/mp4" />
+                <video autoPlay loop muted>
+                    <source src={kotivideo} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
             </section>
@@ -54,7 +55,7 @@ const Services = () => {
             <section className="services-booking">
                 <div className="booking-left">
                     <h2>Ajanvaraus</h2>
-                    <p><a href="https://booksalon.fi/salon/healing-naturally-by-suvi?booking-state=N4IgpgtgDgNg9gTzGAkgExALhANgOwCMAxnmgMwBMAhkVQKw4AsADMxY3WAEaNFkgBfIA" target="_blank" rel="noopener noreferrer">Booksalon</a></p>
+                    <p className='booksalon-link' ><a href="https://booksalon.fi/salon/healing-naturally-by-suvi?booking-state=N4IgpgtgDgNg9gTzGAkgExALhANgOwCMAxnmgMwBMAhkVQKw4AsADMxY3WAEaNFkgBfIA" target="_blank" rel="noopener noreferrer">Booksalon</a></p>
                     <p>Sähköposti:</p>
                     <p>Puhelinnumero:</p>
                 </div>
