@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import heroImage from '../images/hero-image.png';
+import personImage from '../images/suviturunen.jpg'; // Add your image path here
 import './About.css';
 import Footer from './Footer';
 
@@ -9,35 +8,20 @@ const About = () => {
     <div className="about">
       <section className="about-content">
         <div className="about-text">
-          <h2>Lisää minusta</h2>
+          <h1>Kuka minä olen?</h1>
+          <div className="mobile-image-about">
+            <img src={personImage} alt="Person" />
+          </div>
+          <h3>Yhdistelemällä saamiani oppeja osana hermoratahierontaa voin tarjota apua moniin sairauksiin ja ennalta ehkäistä niiden syntyä ja kehittymistä.</h3>
           <p>
-            At Healing Naturally by Suvi, we are dedicated to providing holistic healing services to help you achieve optimal health and well-being. Our experienced practitioners offer a range of natural therapies tailored to your individual needs.
+            Minua on lapsesta asti kiehtonut kokonaisvaltainen hyvinvointi ja ravinnon sekä liikunnan merkitys osana sitä. Olen kiertänyt eri puolilla maailmaa saaden oppia lukuisilta huippuosaajilta ja kasvattanut omaa tietämystäni siitä, miten kokonaisvaltaista hyvinvointia voi edistää luontaisilla menetelmillä.
           </p>
           <p>
-            We believe in the power of nature and the body's innate ability to heal itself. Through our personalized approach, we aim to address the root cause of your health concerns and guide you on a path towards balance and vitality.
+            Ensimmäiset oppini kokonaisvaltaiseen hyvinvointiin liittyen sain jo vuonna <span className="highlight-year">2014</span>, kun valmistuin SKY opistosta, jossa suoritin opintojen lisäksi kansainvälisesti arvostetun Cidesco tutkinnon. Tämän jälkeen olen suorittanut lukuisia opintoja eripuolilla maailmaa ja viimeisin opintoreissuni oli 2024 Balilla, josta sain valtavasti oppia itämaisiin menetelmiin.
           </p>
         </div>
         <div className="about-image">
-          <img src={heroImage} alt="About Us" />
-        </div>
-      </section>
-      <div className="additional-info">
-        <p>
-          Hoito sopii kaiken ikäisille. Hoitoa ei voi tehdä, jos olet raskaana tai olet ollut leikkauksessa viimeisin 8 viikon aikana.
-        </p>
-        <p>
-          Hoito voidaan tehdä vaatteet päällä. Mielellään aluskerrasto.
-        </p>
-        <p>
-          Maksutavat: Käteinen, Kortti, E-passi, Edenred
-        </p>
-      </div>
-      <section className="about-cta">
-        <div className="cta-image">
-          <img src={heroImage} alt="Call to Action" />
-          <div className="cta-button">
-            <Link to="/">Kotisivuille</Link>
-          </div>
+          <img src={personImage} alt="Person" />
         </div>
       </section>
       <Footer />

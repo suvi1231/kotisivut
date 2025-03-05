@@ -56,8 +56,8 @@ const Services = () => {
                 <div className="booking-left">
                     <h2>Ajanvaraus</h2>
                     <p className='booksalon-link' ><a href="https://booksalon.fi/salon/healing-naturally-by-suvi?booking-state=N4IgpgtgDgNg9gTzGAkgExALhANgOwCMAxnmgMwBMAhkVQKw4AsADMxY3WAEaNFkgBfIA" target="_blank" rel="noopener noreferrer">Booksalon</a></p>
-                    <p>Sähköposti:</p>
-                    <p>Puhelinnumero:</p>
+                    <p>Sähköposti: info@healingbysuvi.fi</p>
+                    <p>Puhelinnumero: +358503527209</p>
                 </div>
                 <div className="booking-right">
                     <h2>Maksutavat</h2>

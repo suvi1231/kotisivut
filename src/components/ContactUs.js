@@ -10,13 +10,13 @@ const ContactUs = () => {
       </div>
       <div className="contact-form">
         <form>
-          <label htmlFor="name">Nimi:</label>
+          <label className='label-info' htmlFor="name">Nimi: (pakollinen)</label>
           <input type="text" id="name" name="name" required />
           
-          <label htmlFor="email">Email:</label>
+          <label className='label-info' htmlFor="email">Email: (pakollinen)</label>
           <input type="email" id="email" name="email" required />
           
-          <label htmlFor="message">Viesti:</label>
+          <label className='label-info' htmlFor="message">Viesti: (pakollinen)</label>
           <textarea id="message" name="message" required></textarea>
           
           <button type="submit">Lähetä</button>

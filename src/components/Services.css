@@ -23,7 +23,8 @@
 }
 
 .header-content h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    margin-block-end: 0%;
 }
 
 .header-image {
@@ -45,7 +46,7 @@
     text-align: start;
     margin-bottom: 1rem;
     width: 100%;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 .services-pricing-h3 {
@@ -62,7 +63,6 @@
 
 .service {
     color: #ffffff;
-    padding: 1rem;
     margin-bottom: 1rem;
     width: 30%;
     box-sizing: border-box;
@@ -75,6 +75,7 @@
 
 .service-description {
     text-align: start;
+    font-weight: 300;
 }
 
 .price {

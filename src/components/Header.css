@@ -76,11 +76,33 @@ header {
 }
 
 .header-center img {
-  width: 69%; /* Adjust the width as needed */
+  width: 69%; 
   height: auto;
   display: flex;
   justify-content: center;
   align-self: center;
+}
+
+.header-links-desktop {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.header-links-desktop .header-link {
+  font-size: 1rem;
+  color: #6E5084;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.header-links-desktop .header-link:hover {
+  color: #83788b;
+}
+
+.active {
+  text-decoration: underline !important;
 }
 
 /* New header-links section */
@@ -151,7 +173,7 @@ nav button {
   background: #6E5084;
   color: white;
   border: none;
-  padding: 1rem 2rem;
+  padding: 1.5rem 3rem;
   border-radius: 10px;
   font-size: 1rem;
   font-weight: 500;
@@ -194,6 +216,7 @@ header.scrolled {
   display: none;
   font-size: 1.5rem;
   cursor: pointer;
+  color: #6E5084;
 }
 
 .mobile-menu {
@@ -219,6 +242,12 @@ header.scrolled {
   margin: 1rem 0;
   position: absolute;
   bottom: 8rem; /* Position above the button */
+  font-size: 3rem;
+}
+
+.mobile-social-icons a {
+  padding-inline: 0.5rem;
+  color: #6E5084;
 }
 
 .mobile-menu .button-nav {
@@ -230,6 +259,27 @@ header.scrolled {
 @media (max-width: 768px) {
   .header-left {
     display: none;
+  }
+
+  .mobile-menu-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40%;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  .mobile-menu-links .header-link {
+    font-size: 2.5rem; /* Larger font size */
+    margin: 10px 0;
+    color: #6E5084;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .mobile-menu-links .header-link:hover {
+    color: #705e7d;
   }
 
   .header-center {
@@ -259,7 +309,7 @@ header.scrolled {
   }
 
   .header-link {
-    font-size: 18px; /* Increase the font size */
+    font-size: 34px; /* Increase the font size */
     margin: 1rem 0;
   }
 
@@ -277,6 +327,10 @@ header.scrolled {
   nav button {
     padding: 0.6rem 1.2rem;
     font-size: 0.9rem;
+  }
+
+  .header-links-desktop {
+    display: none;
   }
 }
 /* Animation for initial load */
