@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.777da68e.css",
+    "main.js": "/static/js/main.3a21f814.js",
+    "static/media/kotikuva.jpg": "/static/media/kotikuva.05e2e6ad7744a1daf95f.jpg",
+    "static/media/kotivideo.mp4": "/static/media/kotivideo.9108e3c8668b40d08d9a.mp4",
+    "static/media/suviturunen.jpg": "/static/media/suviturunen.3f45a833cff5d44f446e.jpg",
+    "static/media/hero-image.png": "/static/media/hero-image.1574cf4daebd023125bc.png",
+    "static/media/Suvikukka.png": "/static/media/Suvikukka.6695597bce788a9baf8b.png",
+    "static/media/HealingNaturally.png": "/static/media/HealingNaturally.eda1dbb2c6cabe16c391.png",
+    "static/media/massage1.jpg": "/static/media/massage1.c9eb9b65ad2d741eb4aa.jpg",
+    "static/media/massage2.jpg": "/static/media/massage2.a93ddfa16f37836a5d4b.jpg",
+    "index.html": "/index.html",
+    "main.777da68e.css.map": "/static/css/main.777da68e.css.map",
+    "main.3a21f814.js.map": "/static/js/main.3a21f814.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.777da68e.css",
+    "static/js/main.3a21f814.js"
+  ]
+}
