@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.48f61845.css",
-    "main.js": "/static/js/main.331ffa23.js",
+    "main.js": "/static/js/main.766e7bbf.js",
     "static/media/kotikuva.jpg": "/static/media/kotikuva.05e2e6ad7744a1daf95f.jpg",
     "static/media/kotivideo.mp4": "/static/media/kotivideo.9108e3c8668b40d08d9a.mp4",
     "static/media/suviturunen.jpg": "/static/media/suviturunen.3f45a833cff5d44f446e.jpg",
@@ -12,10 +12,10 @@
     "static/media/massage2.jpg": "/static/media/massage2.a93ddfa16f37836a5d4b.jpg",
     "index.html": "/index.html",
     "main.48f61845.css.map": "/static/css/main.48f61845.css.map",
-    "main.331ffa23.js.map": "/static/js/main.331ffa23.js.map"
+    "main.766e7bbf.js.map": "/static/js/main.766e7bbf.js.map"
   },
   "entrypoints": [
     "static/css/main.48f61845.css",
-    "static/js/main.331ffa23.js"
+    "static/js/main.766e7bbf.js"
   ]
 }
