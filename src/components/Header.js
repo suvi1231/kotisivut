@@ -7,7 +7,6 @@ import { FaInstagram, FaFacebook, FaBars, FaTimes, FaGripLines } from "react-ico
 const Header = () => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
-  console.log(location.pathname.includes('minusta'))
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -17,10 +16,10 @@ const Header = () => {
     <header>
       <div className='header-upper'>
         <div className="header-left">
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/healingnaturallybysuvi/" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
           </a>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/share/19ACeESSnh/" target="_blank" rel="noopener noreferrer">
             <FaFacebook />
           </a>
         </div>
@@ -52,10 +51,10 @@ const Header = () => {
         <Link className={`header-link ${location.pathname.includes('minusta') ? 'active' : ''}`} to="/minusta" onClick={toggleMenu}>Yrittäjästä</Link>
         </div>
         <div className="mobile-social-icons">
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/healingnaturallybysuvi/" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
           </a>
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/share/19ACeESSnh/" target="_blank" rel="noopener noreferrer">
             <FaFacebook />
           </a>
         </div>

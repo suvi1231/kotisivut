@@ -13,14 +13,14 @@ const Footer = () => {
       <div className="footer-right">
         <div className="footer-hours">
           <h3>Aukioloajat:</h3>
-          <p>Ma-to 08.00–16.00</p>
-          <p>Pe 09.00–14.00</p>
+          <p>Ma-Pe Sopimuksen mukaan</p>
           <p>Poikkeusajat sopimuksen mukaan.</p>
         </div>
         <div className="footer-contact">
           <h3>Yhteystiedot</h3>
           <p>+358503527209</p>
           <p>info@healingbysuvi.fi</p>
+          <p>Luotolantie 8, 04230 Kerava</p>
         </div>
       </div>
     </footer>

@@ -9,7 +9,7 @@ const Services = () => {
             <section className="services-header">
                 <div className="header-content">
                     <h1>Hoidot</h1>
-                    <p>Mahdollisuus tutustua hoitomuotoon ja menetelmiin ilman suurempaa sitoutumista. Hoidot kestävät noin kaksi (2) tuntia. Ensimmäisen hoidon yhteydessä kartoitetaan sinun vaivasi ja suunnitellaan yhdessä niihin sopiva ratkaisu. Jokainen vaiva ja oire on yksilöllinen ja on tärkeää rakentaa juuri sinun kehosi kannalta oikea hoitopaketti sekä hoitosuunnitelma lyhyellä ja pitkällä aikavälillä. Oikein mitoitetulla hoitosuunnitelmalla ja tiiviillä hoitosyklillä saadaan merkittävää hyötyä kehon toiminnan kannalta. Kysyy lisää hoidoista, vastaan mielelläni!</p>
+                    <p>Mahdollisuus tutustua hoitomuotoon ja menetelmiin ilman suurempaa sitoutumista. Hoidot kestävät noin (1.5) - (2) tuntia. Ensimmäisen hoidon yhteydessä kartoitetaan sinun vaivasi ja suunnitellaan yhdessä niihin sopiva ratkaisu. Jokainen vaiva ja oire on yksilöllinen ja on tärkeää rakentaa juuri sinun kehosi kannalta oikea hoitopaketti sekä hoitosuunnitelma lyhyellä ja pitkällä aikavälillä. Oikein mitoitetulla hoitosuunnitelmalla ja tiiviillä hoitosyklillä saadaan merkittävää hyötyä kehon toiminnan kannalta. Kysyy lisää hoidoista, vastaan mielelläni!</p>
                 </div>
                 <div className="header-image">
                     <img src={treatmentImage} alt="Treatment" />
@@ -23,20 +23,20 @@ const Services = () => {
                 <div className="service">
                     <div className="service-description">
                         <h3>Kertakäynti</h3>
-                        <p className="price">135€</p>
+                        <p className="price">129€</p>
                         <p>Mahdollisuus tutustua hoitomuotoon ja menetelmiin ilman suurempaa sitoutumista.</p>
                     </div>
                 </div>
                 <div className="service">
                     <div className="service-description">
-                        <h3>Sarjahoito</h3>
+                        <h3>Sarjahoito 5krt</h3>
                         <p className="price"> 595€ (1krt 119€)</p>
                         <p>Suositellaan pitkään jatkuneisiin kiputiloihin ja sairauksiin viiden (5) käyntikerran pakettina.</p>
                     </div>
                 </div>
                 <div className="service">
                     <div className="service-description">
-                        <h3>Sarjahoito</h3>
+                        <h3>Sarjahoito 10krt</h3>
                         <p className="price">1090€ (1krt 109€) </p>
                         <p>Suositellaan pitkään jatkuneisiin kiputiloihin ja sairauksiin 10 käyntikerran pakettina.</p>
                     </div>

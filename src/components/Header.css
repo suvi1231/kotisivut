@@ -232,6 +232,10 @@ header.scrolled {
   z-index: 1000;
 }
 
+.mobile-menu button {
+  padding: 2rem 4rem;
+}
+
 .mobile-menu.open {
   display: flex;
 }
@@ -241,7 +245,7 @@ header.scrolled {
   gap: 1rem;
   margin: 1rem 0;
   position: absolute;
-  bottom: 8rem; /* Position above the button */
+  bottom: 10rem; /* Position above the button */
   font-size: 3rem;
 }
 
